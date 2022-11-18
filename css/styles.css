@@ -844,13 +844,13 @@ MODAL WINDOW
   transition: var(--trns);
 }
 
-.close-btn .opened:hover,
-.close-btn .opened:focus {
+.close-btn:hover .opened,
+.close-btn:focus .opened {
   opacity: 0;
 }
 
-.close-btn .close:hover,
-.close-btn .close:focus {
+.close-btn:hover .close,
+.close-btn:focus .close {
   opacity: 1;
 }
 
@@ -866,19 +866,21 @@ MODAL WINDOW
   color: var(--main-color);
 }
 
-.modal-form-field {
-  /* display: flex;
-  flex-direction: column; */
-}
+/* .modal-form-field {
+  display: flex;
+  flex-direction: column;
+} */
 
 .form-group {
-  display: block;
-  position: relative;
   display: flex;
+  position: relative;
   flex-direction: column;
   margin-bottom: 10px;
 }
 
+.modal-form-field :nth-last-child(3) {
+  margin-bottom: 0;
+}
 
 .form-label {
   margin-bottom: 4px;
@@ -1003,6 +1005,7 @@ MODAL WINDOW
   border-radius: 4px;
   border-color: transparent;
   transition: var(--trns);
+  cursor: pointer;
 }
 
 .form-btn-modal:focus,
