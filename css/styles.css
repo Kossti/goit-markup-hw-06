@@ -834,23 +834,23 @@ MODAL WINDOW
   cursor: pointer;
 }
 
-.close-btn-icon .opened {
+.close-btn .opened {
   opacity: 1;
   transition: var(--trns);
 }
 
-.close-btn-icon .close {
+.close-btn .close {
   opacity: 0;
   transition: var(--trns);
 }
 
-.close-btn-icon .opened:focus,
-.close-btn-icon .opened:hover {
+.close-btn .opened:hover,
+.close-btn .opened:focus {
   opacity: 0;
 }
 
-.close-btn-icon .close:focus,
-.close-btn-icon .close:hover {
+.close-btn .close:hover,
+.close-btn .close:focus {
   opacity: 1;
 }
 
